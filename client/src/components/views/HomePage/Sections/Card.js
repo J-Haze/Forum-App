@@ -6,13 +6,13 @@ function Card(props) {
   return (
     <div className="card">
       <div className="card-title">
-        <Link className="link" to={`/forum-app/post/${props._id}`}>
+        <Link className="link" to={`/post/${props._id}`}>
           {props.title}
         </Link>
       </div>
       <div className="card-subtitle">
         Posted by{" "}
-        <Link className="link" to={`/forum-app/user/${props.author_id}`}>
+        <Link className="link" to={`/user/${props.author_id}`}>
           <strong>{props.author}</strong>
         </Link>{" "}
         on {moment(props.createdAt).format("LLL")}

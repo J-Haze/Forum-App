@@ -13,7 +13,7 @@ function LoginPage(props) {
   const history = useHistory();
 
   if (props.isLoggedIn) {
-    history.push("/forum-app/");
+    history.push("/");
   }
 
   const submitLogin = () => {

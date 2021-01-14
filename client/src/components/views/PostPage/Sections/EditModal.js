@@ -70,7 +70,7 @@ function SignupPage(props) {
         props.fetchBlogs();
         props.whitePencil();
         props.hideEditModal();
-        history.push(`/forum-app/post/${props.postid}`);
+        history.push(`/post/${props.postid}`);
       })
       .catch((error) => console.log("error", error));
   };

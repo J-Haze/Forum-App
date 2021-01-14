@@ -9,7 +9,7 @@ function NotFound() {
       <h3>Loading...</h3>
       <div>
         If page does not respond within 10 seconds:
-        <Link className="link-not-found" to="/forum-app/">
+        <Link className="link-not-found" to="/">
           <strong>Click here</strong>
         </Link>
       </div>

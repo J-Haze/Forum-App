@@ -98,7 +98,7 @@ function PostPage(props) {
       .then((res) => {
         fetchComments();
         hideDeleteCommentModal();
-        history.push(`/forum-app/post/${props._id}`);
+        history.push(`/post/${props._id}`);
       })
       .catch((error) => {
         console.log("error", error);
@@ -145,17 +145,14 @@ function PostPage(props) {
           <div className="post-page-cont">
             <div className="post-page-head">
               <div className="post-title">
-                <Link className="link" to={`/forum-app/post/${props._id}`}>
+                <Link className="link" to={`/post/${props._id}`}>
                   {props.title}
                 </Link>
               </div>
               {isUserPost ? (
                 <div className="post-subtitle-flex">
                   Posted by you{" ("}
-                  <Link
-                    className="link"
-                    to={`/forum-app/user/${props.author_id}`}
-                  >
+                  <Link className="link" to={`/user/${props.author_id}`}>
                     <strong>{props.author}</strong>
                   </Link>
                   {") "}
@@ -223,10 +220,7 @@ function PostPage(props) {
               ) : (
                 <div className="post-subtitle-flex">
                   Posted by{" "}
-                  <Link
-                    className="link space"
-                    to={`/forum-app/user/${props.author_id}`}
-                  >
+                  <Link className="link space" to={`/user/${props.author_id}`}>
                     <strong>{props.author}</strong>
                   </Link>{" "}
                   on {moment(props.createdAt).format("LLL")}

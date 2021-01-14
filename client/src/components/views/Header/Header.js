@@ -16,7 +16,7 @@ function Header(props) {
   return (
     <div id="header">
       <div id="header-container">
-        <Link className="link" to={`/forum-app/`}>
+        <Link className="link" to={`/`}>
           <div id="title">Justin's Forum App</div>
         </Link>
         {props.isLoggedIn ? (
@@ -25,23 +25,19 @@ function Header(props) {
               <Link
                 id="profile-btn"
                 className="link header-btn"
-                to={`/forum-app/user/${props.currentUser._id}`}
+                to={`/user/${props.currentUser._id}`}
               >
                 Profile
               </Link>
             ) : (
-              <Link
-                id="home-btn"
-                className="link header-btn"
-                to={"/forum-app/"}
-              >
+              <Link id="home-btn" className="link header-btn" to={"/"}>
                 Home
               </Link>
             )}
             <Link
               id="new-post-btn"
               className="link header-btn"
-              to={"/forum-app/post/new"}
+              to={"/post/new"}
             >
               New Post
             </Link>
@@ -57,18 +53,10 @@ function Header(props) {
           </div>
         ) : (
           <div id="btn-cont-unauth" className="header-btn-cont">
-            <Link
-              id="sign-up-btn"
-              className="link header-btn"
-              to={`/forum-app/sign-up`}
-            >
+            <Link id="sign-up-btn" className="link header-btn" to={`/sign-up`}>
               Sign Up
             </Link>
-            <Link
-              id="log-in-btn"
-              className="link header-btn"
-              to={`/forum-app/log-in`}
-            >
+            <Link id="log-in-btn" className="link header-btn" to={`/log-in`}>
               Log In
             </Link>
           </div>

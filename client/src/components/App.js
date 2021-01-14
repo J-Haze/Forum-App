@@ -95,7 +95,7 @@ function App() {
       .then((res) => {
         fetchBlogs();
         hideConfirmModal();
-        history.push(`/forum-app/user/${currentUser._id}`);
+        history.push(`/user/${currentUser._id}`);
       })
       .catch((error) => {
         console.log("error", error);
@@ -125,7 +125,7 @@ function App() {
       <Switch>
         <Route
           exact
-          path="/forum-app/"
+          path="/"
           render={() => (
             <HomePage
               fetchBlogs={fetchBlogs}
@@ -137,7 +137,7 @@ function App() {
 
         <Route
           exact
-          path="/forum-app/log-in"
+          path="/log-in"
           render={() => (
             <LoginPage
               isLoggedIn={isLoggedIn}
@@ -151,7 +151,7 @@ function App() {
 
         <Route
           exact
-          path="/forum-app/sign-up"
+          path="/sign-up"
           render={() => (
             <SignupPage
               isLoggedIn={isLoggedIn}
@@ -166,7 +166,7 @@ function App() {
 
         <Route
           exact
-          path="/forum-app/post/new"
+          path="/post/new"
           render={() => (
             <NewPostPage fetchBlogs={fetchBlogs} isLoggedIn={isLoggedIn} />
           )}
@@ -176,7 +176,7 @@ function App() {
           <Route
             exact
             key={post._id}
-            path={`/forum-app/post/${post._id}`}
+            path={`/post/${post._id}`}
             render={() => (
               <PostPage
                 {...post}
@@ -202,7 +202,7 @@ function App() {
           <Route
             exact
             key={user._id}
-            path={`/forum-app/user/${user._id}`}
+            path={`/user/${user._id}`}
             render={() => (
               <UserPage
                 {...user}

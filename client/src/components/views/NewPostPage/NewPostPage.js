@@ -19,7 +19,7 @@ function SignupPage(props) {
   const history = useHistory();
 
   if (!props.isLoggedIn) {
-    history.push("/forum-app/");
+    history.push("/");
   }
 
   const submitNewPost = () => {
@@ -69,7 +69,7 @@ function SignupPage(props) {
         setTitle("");
         setMainText("");
         props.fetchBlogs();
-        history.push(`/forum-app/post/${postid}`);
+        history.push(`/post/${postid}`);
       })
       .catch((error) => console.log("error", error));
   };

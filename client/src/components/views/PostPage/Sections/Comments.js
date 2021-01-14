@@ -7,11 +7,10 @@ import Axios from "axios";
 import badWords from "bad-words";
 import { useHistory } from "react-router-dom";
 
-
 const filter = new badWords();
 
 function Comments(props) {
-const [newComment, setNewComment] = useState("");
+  const [newComment, setNewComment] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const history = useHistory();
@@ -50,7 +49,7 @@ const [newComment, setNewComment] = useState("");
         setErrorMessage("");
         setNewComment("");
         props.fetchComments();
-        history.push(`/forum-app/post/${props.postid}`);
+        history.push(`/post/${props.postid}`);
       })
       .catch((error) => console.log("error", error));
   };
@@ -69,7 +68,7 @@ const [newComment, setNewComment] = useState("");
                 <div className="comment-author flex">
                   <Link
                     className="comment-link space-small"
-                    to={`/forum-app/user/${comment.author}`}
+                    to={`/user/${comment.author}`}
                   >
                     - Commented by <strong>{comment.username}</strong>
                   </Link>{" "}
@@ -89,10 +88,7 @@ const [newComment, setNewComment] = useState("");
               <div key={comment._id} className="comment">
                 <div className="comment-text">{comment.text}</div>
                 <div className="comment-author">
-                  <Link
-                    className="comment-link"
-                    to={`/forum-app/user/${comment.author}`}
-                  >
+                  <Link className="comment-link" to={`/user/${comment.author}`}>
                     - Commented by <strong>{comment.username}</strong>
                   </Link>{" "}
                   on {moment(comment.createdAt).format("LLL")}
@@ -132,7 +128,7 @@ const [newComment, setNewComment] = useState("");
               Please log in to add a comment to this post
             </div>
             <Link
-              to={`/forum-app/log-in`}
+              to={`/log-in`}
               style={{ textDecoration: "none" }}
               className="no-user-btn"
             >
@@ -141,11 +137,7 @@ const [newComment, setNewComment] = useState("");
           </div>
         )}
       </div>
-      <Link
-        to={`/forum-app/`}
-        style={{ textDecoration: "none" }}
-        className="back-btn"
-      >
+      <Link to={`/`} style={{ textDecoration: "none" }} className="back-btn">
         Home
       </Link>{" "}
     </div>
@@ -153,4 +145,3 @@ const [newComment, setNewComment] = useState("");
 }
 
 export default Comments;
-

@@ -18,12 +18,12 @@ function SignupPage(props) {
   const history = useHistory();
 
   if (props.isLoggedIn) {
-    history.push("/forum-app/");
+    history.push("/");
   }
 
   useEffect(() => {
     if (props.isLoggedIn) {
-      history.push("/forum-app/");
+      history.push("/");
     }
   }, []);
 
@@ -128,7 +128,7 @@ function SignupPage(props) {
         </div>
         <div id="bottom">
           Already registered?{" "}
-          <Link className="link-blue" to="/forum-app/log-in">
+          <Link className="link-blue" to="/log-in">
             Log In
           </Link>
         </div>
