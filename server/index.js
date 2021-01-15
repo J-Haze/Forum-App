@@ -138,7 +138,7 @@ if (process.env.NODE_ENV === "production") {
   // app.use(express.static("../client/build"));
   //  app.use(express.static("./client/build"));
 
-  app.use(express.static("client/build"));
+  app.use(express.static("../client/build"));
 
   // index.html for all page routes    html or routing and naviagtion
   app.get("*", (req, res) => {
