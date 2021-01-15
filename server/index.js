@@ -54,7 +54,7 @@ app.use(bodyParser.json());
 //   // app.use(express.static("/build"));
 //   // app.use(express.static("../client/build"));
 //   //  app.use(express.static("./client/build"));
-  
+
 //   app.use(express.static("client/build"));
 
 //   // index.html for all page routes    html or routing and naviagtion
@@ -83,7 +83,7 @@ if (process.env.NODE_ENV === "production") {
   // app.use(express.static("/build"));
   // app.use(express.static("../client/build"));
   //  app.use(express.static("./client/build"));
-  
+
   app.use(express.static("client/build"));
 
   // index.html for all page routes    html or routing and naviagtion
@@ -91,7 +91,7 @@ if (process.env.NODE_ENV === "production") {
     // res.sendFile(path.resolve(__dirname, "./build", "build", "index.html"));
 
     // res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
   });
 }
 
