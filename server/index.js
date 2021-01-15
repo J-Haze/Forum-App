@@ -31,25 +31,24 @@ const connect = mongoose
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
 
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
 
-  if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-
-    app.get("*", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "../client", "build", "index.html")); // relative path
-    });
-  }
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "../client", "build", "index.html")); // relative path
+//   });
+// }
 
 app.use(flash());
 app.use(session({ secret: "cats", resave: false, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-// app.use(logger("dev"));
+app.use(logger("dev"));
 app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-// app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(cors());
 
@@ -81,9 +80,9 @@ var userRouter = require("./routes/user");
 var postRouter = require("./routes/post");
 
 //Routes Middleware
-app.use("api/", indexRouter);
-app.use("api/user", userRouter);
-app.use("api/post", postRouter);
+app.use("/api/", indexRouter);
+app.use("/api/user", userRouter);
+app.use("/api/post", postRouter);
 
 // // Serve static assets if in production
 // if (process.env.NODE_ENV === "production") {
@@ -158,9 +157,6 @@ app.use("api/post", postRouter);
 //   });
 // }
 
-
-
-
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("client/build"));
 
@@ -169,8 +165,13 @@ app.use("api/post", postRouter);
 //   });
 // }
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
 
-
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "../client", "build", "index.html")); // relative path
+  });
+}
 
 const port = process.env.PORT || 5000;
 
