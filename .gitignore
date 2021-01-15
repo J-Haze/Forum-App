@@ -6,7 +6,7 @@
 /coverage
 
 # production
-# /build
+/build
 
 dev.js
 
