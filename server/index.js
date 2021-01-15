@@ -31,7 +31,7 @@ const connect = mongoose
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
 
-  
+
   if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 
@@ -81,9 +81,9 @@ var userRouter = require("./routes/user");
 var postRouter = require("./routes/post");
 
 //Routes Middleware
-app.use("/", indexRouter);
-app.use("/user", userRouter);
-app.use("/post", postRouter);
+app.use("api/", indexRouter);
+app.use("api/user", userRouter);
+app.use("api/post", postRouter);
 
 // // Serve static assets if in production
 // if (process.env.NODE_ENV === "production") {
