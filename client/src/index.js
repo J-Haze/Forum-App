@@ -12,7 +12,7 @@ import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
 
 //prod
-axios.defaults.baseURL = "https://justins-forum-app.herokuapp.com/";
+axios.defaults.baseURL = "https://justins-forum-app.herokuapp.com";
 //dev
 // axios.defaults.baseURL = 'http://localhost:5000';
 
