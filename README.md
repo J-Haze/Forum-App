@@ -9,7 +9,7 @@ MERN Stack, deployed on Heroku
 ### Purpose: ###
 Showcase my ability to create a full stack application. The app utilizes a MERN stack and a RESTful API.
 
-🔗 API can be accessed [here](https://justins-forum-api.herokuapp.com/).
+🔗 **API** can be accessed [here](https://justins-forum-api.herokuapp.com/).
 
 ### API Documentation
 * Base URL: [https://justins-forum-api.herokuapp.com/](https://justins-forum-api.herokuapp.com/)
