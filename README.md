@@ -1,13 +1,10 @@
 ## Justin's Forum App
-Online Forum where users can post articles and pictures. 
-Users can comment on other's posts, and can edit or delete their own posts.
+A RESTful online forum/blog application with CRUD operations.
+Users can post articles and pictures, comment on other's posts, and edit or delete their own posts.
 
-MERN Stack, deployed on Heroku
+MERN Stack, deployed on Heroku.
 
 🔗 **Live preview** of the app is [here](https://justins-forum.herokuapp.com/).
-
-### Purpose: ###
-Showcase my ability to create a full stack application. The app utilizes a MERN stack and a RESTful API.
 
 🔗 **API** can be accessed [here](https://justins-forum-api.herokuapp.com/).
 
@@ -52,6 +49,8 @@ Showcase my ability to create a full stack application. The app utilizes a MERN 
 * Users with admin access can upload new products to the site, using the Upload Product Page
 * Shoppers can easily view their purchase history
 * Demo Page displays a clothing store, but can easily be adapted to any type of product
+* bcryptjs: Hashes passwords in order to safely secure user data
+
 
 ### Built With: ###
 
