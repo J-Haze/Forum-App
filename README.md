@@ -17,11 +17,12 @@ API can be accessed [here](https://justins-forum-api.herokuapp.com/).
 | Method        | Endpoint       | Usage |  Parameters| 🔒 |
 | ------------- |:-------------| :-----|----| ---|
 | GET      | / | Get all posts | |  |
-
 | GET      | /user | Get current user | | ✅ |
-| POST      | /user/login      |   Logins in user | username*, email*, password* |
-| POST | /user/signup      |    Sign up user | username*, password* |
-| GET | /user/blogs |Get users blogs | | ✅|
+| POST      | /user/log-in      |   Log in in as user | username*, password*, confirm-password* |
+| POST | /user/new      |    Sign up as a user | username*, password* |
+| GET | /user/posts |Get all posts from current user | | ✅|
+| GET | /user/:userid/posts |Get all posts from specific user | | |
+
 | GET | /blogs | Get all blogs | |
 | POST | /blogs | Post a blog | title*, text* | ✅|
 | GET | /blogs/:id | Get a specific blog | |
