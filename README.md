@@ -4,7 +4,7 @@ Online Store App with product search, product filtering, user authentication, Pa
 
 MERN Stack, deployed on Heroku
 
-🔗 **Live preview** of the app is [here](https://justins-online-shop.herokuapp.com).
+🔗 **Live preview** of the app is [here](https://justins-forum.herokuapp.com/).
 
 ### Purpose: ###
 Showcase my ability to create a full stack application. The app utilizes a MERN stack.
