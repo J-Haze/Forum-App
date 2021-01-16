@@ -1,6 +1,6 @@
 ## Justin's Forum App
 A RESTful online forum/blog application with CRUD operations.
-Users can post articles and pictures, comment on other's posts, and edit or delete their own posts.
+<br> Users can post articles and pictures, comment on other's posts, and edit or delete their own posts.
 
 MERN Stack, deployed on Heroku.
 
