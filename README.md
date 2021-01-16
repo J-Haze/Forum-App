@@ -1,4 +1,4 @@
-## Justin's Forum App
+# Justin's Forum App
 A RESTful online forum/blog application with CRUD operations.
 <br> Users can post articles and pictures, comment on other's posts, and edit or delete their own posts.
 
@@ -8,7 +8,7 @@ Full stack MERN Application, deployed on Heroku.
 
 🔗 **API** can be accessed [here](https://justins-forum-api.herokuapp.com/).
 
-### API Documentation
+## API Documentation
 * Base URL: [https://justins-forum-api.herokuapp.com/](https://justins-forum-api.herokuapp.com/)
 
 | Method        | Endpoint       | Usage |Parameters| 🔒 |
@@ -32,7 +32,7 @@ Full stack MERN Application, deployed on Heroku.
 | PUT | /post/:postid/:commentid/unpublish | Unpublish a comment |  | ✅|
 *required (\*)*
 
-### Features: ###
+## Features: ##
 
 * RESTful API is versatile and accessible by any frontend.
 * CRUD Operations: Posts and Comments
@@ -50,7 +50,7 @@ Full stack MERN Application, deployed on Heroku.
 * View each post and interact by leaving a comment
 * badWords: Filter won't allow posts with bad words in the title
 
-### Built With: ###
+# Built With: #
 
 * ReactJS
 * JavaScript
@@ -61,7 +61,7 @@ Full stack MERN Application, deployed on Heroku.
 * HTML/CSS
 * Heroku Hosting
 
-### Pictures: ###
+## Pictures: ##
 
 #### Main Page: ####
 ![Image of App](./images/Readme1.png)
