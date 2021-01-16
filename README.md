@@ -11,7 +11,7 @@ Showcase my ability to create a full stack application. The app utilizes a MERN 
 
 API can be accessed [here](https://justins-forum-api.herokuapp.com/).
 
-## API Documentation
+### API Documentation
 * Base URL: [https://justins-forum-api.herokuapp.com/](https://justins-forum-api.herokuapp.com/)
 
 | Method        | Endpoint       | Usage |  Parameters| 🔒 |
