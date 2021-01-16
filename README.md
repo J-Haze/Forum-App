@@ -14,23 +14,23 @@ API can be accessed [here](https://justins-forum-api.herokuapp.com/).
 ### API Documentation
 * Base URL: [https://justins-forum-api.herokuapp.com/](https://justins-forum-api.herokuapp.com/)
 
-| Method        | Endpoint       | Usage |  Parameters| 🔒 |
+| Method        | Endpoint       | Usage |Parameters| 🔒 |
 | ------------- |:-------------| :-----|----| ---|
 | GET      | / | Get all posts | |  |
 | GET      | /user | Get current user | | ✅ |
-| POST      | /user/log-in      |   Log in in as user | username*, password*, confirm-password* |
-| POST | /user/new      |    Sign up as a user | username*, password* |
+| POST      | /user/log-in      |   Log in in as user |username*, password*, confirm-password*|
+| POST | /user/new      |    Sign up as a user |username*, password*|
 | GET | /user/posts |Get all posts from current user | | ✅|
 | GET | /user/:userid/posts |Get all posts from specific user | | |
 | GET | /post | Get all posts | |
-| POST | /post/new | Create new post | title*, content* | ✅|
+| POST | /post/new | Create new post |title*, content*| ✅|
 | GET | /post/:postid | Get specific post |  | |
-| PUT | /post/:postid | Edit a post | title*, content* | ✅|
-| DELETE | /post/:postid | Delete a post | title*, content* | ✅|
+| PUT | /post/:postid | Edit a post |title*, content*| ✅|
+| DELETE | /post/:postid | Delete a post |title*, content*| ✅|
 | PUT | /post/:postid/publish | Publish a post |  | ✅|
 | PUT | /post/:postid/unpublish | Unpublish a post |  | ✅|
 | GET | /post/:postid/comments | Get all comments on a post | |
-| POST | /post/:postid/comment | Comment on a post | text* | ✅|
+| POST | /post/:postid/comment | Comment on a post |text*| ✅|
 | DELETE | /post/:postid/:commentid | Delete a comment |  | ✅|
 | PUT | /post/:postid/:commentid/unpublish | Unpublish a comment |  | ✅|
 
