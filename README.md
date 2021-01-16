@@ -60,7 +60,7 @@ API can be accessed [here](https://justins-forum-api.herokuapp.com/).
 
 #### Main Page: ####
 ![Image of App](./images/Readme1.png)
-#### Blog Post: #### 
+#### Post Page: #### 
 ![Image of App2](./images/Readme2.png)
 #### User specific page: #### 
 ![Image of App3](./images/Readme3.png)
