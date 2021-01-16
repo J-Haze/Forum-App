@@ -40,7 +40,7 @@ App currently shows a clothing store, but the framework could be used for any ty
 ### Pictures: ###
 
 #### Main Page: ####
-![Image of App](./ReadMe-Images/ReadMe1.png)
+![Image of App](./images/Readme1.png)
 #### Shoppers can filter items by Category, Gender, and Price: #### 
 ![Image of App2](./ReadMe-Images/ReadMe2.png)
 #### Shoppers can search for specific items or attributes: #### 
