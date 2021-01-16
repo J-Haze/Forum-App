@@ -1,6 +1,6 @@
 ## Justin's Forum App
 Online Forum where users can post articles and pictures. 
-Users can comment on other's posts, and edit or delete thir own posts.
+Users can comment on other's posts, and can edit or delete their own posts.
 
 MERN Stack, deployed on Heroku
 
@@ -45,17 +45,17 @@ Table:
 
 #### Main Page: ####
 ![Image of App](./images/Readme1.png)
-#### Shoppers can filter items by Category, Gender, and Price: #### 
+#### Blog Post: #### 
 ![Image of App2](./images/Readme2.png)
-#### Shoppers can search for specific items or attributes: #### 
+#### User specific page: #### 
 ![Image of App3](./images/Readme3.png)
-#### Product Detail Page: #### 
+#### Create new posts: #### 
 ![Image of App4](./images/Readme4.png)
-#### User specific shopping cart: #### 
 ![Image of App5](./images/Readme5.png)
-#### Admin can upload new products to be sold: #### 
+#### Edit your posts: #### 
 ![Image of App6](./images/Readme6.png)
-#### Page for user specific purchase history: #### 
-![Image of App7](./images/Readme7.png)
 #### User Authentication: #### 
 ![Image of App8](./images/Readme8.png)
+#### Sign up: #### 
+![Image of App7](./images/Readme7.png)
+
