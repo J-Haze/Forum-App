@@ -11,8 +11,23 @@ Showcase my ability to create a full stack application. The app utilizes a MERN 
 
 API can be accessed [here](https://justins-forum-api.herokuapp.com/).
 
-Table:
-<Table>
+## API Documentation
+* Base URL: [https://justins-forum-api.herokuapp.com/](https://justins-forum-api.herokuapp.com/)
+
+| Method        | Endpoint       | Usage |  Parameters| 🔒 |
+| ------------- |:-------------| :-----|----| ---|
+| GET      | /user | Get current user | | ✅ |
+| POST      | /user/login      |   Logins in user | username*, email*, password* |
+| POST | /user/signup      |    Sign up user | username*, password* |
+| GET | /user/blogs |Get users blogs | | ✅|
+| GET | /blogs | Get all blogs | |
+| POST | /blogs | Post a blog | title*, text* | ✅|
+| GET | /blogs/:id | Get a specific blog | |
+| DELETE | /blogs/:id | Delete a blog| | ✅|
+| PUT | /blogs/:id | Update a blog| | ✅|
+| POST | /blogs/:id/comment | Post a comment on a blog| author*, text*|
+
+*required (\*)*
 
 
 
