@@ -33,38 +33,23 @@ Full stack MERN Application, deployed on Heroku.
 
 *required (\*)*
 
-
-
-
 ### Features: ###
 
 * RESTful API is versatile and accessible by any frontend.
+* CRUD Operations: Posts and Comments
 * TinyMCE Rich Text Editor 
   * Users can create posts with a variety of formatting 
   * Posts can contain pictures, and gifs
   * Allows ultimate flexibility and customization of posts
 * User Authenticaiton:
   * Sign up as a new user
+    * bcryptjs: Hashes passwords in order to safely secure user data
   * Log in in order to create posts and comments
     * jsonwebtoken - creates token for API to verify on each call, expires within an hour of inactivity
-* bcryptjs: Hashes passwords in order to safely secure user data
+* Easy to edit or delete your own existing posts
+* View specific user profiles
+* View each post and interact by leaving a comment
 * badWords: Filter won't allow posts with bad words in the title
-
-
-
-* App makes it easy for shoppers to purchase items
-  * Shoppers can search for products and easily add them to their cart
-  * Shoppers can purchase items in their cart, using PayPal Secure Checkout
-* Filter items by various categories, and price
-* Search for items using the searchbar
-* Click on items to visit the Product Detail Page and view specifics about the product
-* Easily accessible shopping cart where shopper can see their collection of items ready to purchase
-* User authentication allows for user specific carts, purchase history, and admin privledges
-* Users with admin access can upload new products to the site, using the Upload Product Page
-* Shoppers can easily view their purchase history
-* Demo Page displays a clothing store, but can easily be adapted to any type of product
-
-
 
 ### Built With: ###
 
@@ -72,7 +57,8 @@ Full stack MERN Application, deployed on Heroku.
 * JavaScript
 * NodeJS
 * ExpressJS
-* MongoDB
+* MongoDB + Mongoose
+* Axios
 * HTML/CSS
 * Heroku Hosting
 
