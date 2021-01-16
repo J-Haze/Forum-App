@@ -8,7 +8,7 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 //             changeOrigin: true,
 //         })
 //     );
-// };
+// }; 
 
 module.exports = function (app) {
   app.use(
