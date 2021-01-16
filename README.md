@@ -30,7 +30,6 @@ Full stack MERN Application, deployed on Heroku.
 | POST | /post/:postid/comment | Comment on a post |text*| ✅|
 | DELETE | /post/:postid/:commentid | Delete a comment |  | ✅|
 | PUT | /post/:postid/:commentid/unpublish | Unpublish a comment |  | ✅|
-
 *required (\*)*
 
 ### Features: ###
