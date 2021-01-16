@@ -22,13 +22,17 @@ API can be accessed [here](https://justins-forum-api.herokuapp.com/).
 | POST | /user/new      |    Sign up as a user | username*, password* |
 | GET | /user/posts |Get all posts from current user | | ✅|
 | GET | /user/:userid/posts |Get all posts from specific user | | |
-
-| GET | /blogs | Get all blogs | |
-| POST | /blogs | Post a blog | title*, text* | ✅|
-| GET | /blogs/:id | Get a specific blog | |
-| DELETE | /blogs/:id | Delete a blog| | ✅|
-| PUT | /blogs/:id | Update a blog| | ✅|
-| POST | /blogs/:id/comment | Post a comment on a blog| author*, text*|
+| GET | /post | Get all posts | |
+| POST | /post/new | Create new post | title*, content* | ✅|
+| GET | /post/:postid | Get specific post |  | |
+| PUT | /post/:postid | Edit a post | title*, content* | ✅|
+| DELETE | /post/:postid | Delete a post | title*, content* | ✅|
+| PUT | /post/:postid/publish | Publish a post |  | ✅|
+| PUT | /post/:postid/unpublish | Unpublish a post |  | ✅|
+| GET | /post/:postid/comments | Get all comments on a post | |
+| POST | /post/:postid/comment | Comment on a post | text* | ✅|
+| DELETE | /post/:postid/:commentid | Delete a comment |  | ✅|
+| PUT | /post/:postid/:commentid/unpublish | Unpublish a comment |  | ✅|
 
 *required (\*)*
 
