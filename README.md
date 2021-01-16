@@ -2,11 +2,11 @@
 A RESTful online forum/blog application with CRUD operations.
 <br> Users can post articles and pictures, comment on other's posts, and edit or delete their own posts.
 
-MERN Stack, deployed on Heroku.
-
 🔗 **Live preview** of the app is [here](https://justins-forum.herokuapp.com/).
 
 🔗 **API** can be accessed [here](https://justins-forum-api.herokuapp.com/).
+
+MERN Stack, deployed on Heroku.
 
 ### API Documentation
 * Base URL: [https://justins-forum-api.herokuapp.com/](https://justins-forum-api.herokuapp.com/)
