@@ -16,6 +16,8 @@ API can be accessed [here](https://justins-forum-api.herokuapp.com/).
 
 | Method        | Endpoint       | Usage |  Parameters| 🔒 |
 | ------------- |:-------------| :-----|----| ---|
+| GET      | / | Get all posts | |  |
+
 | GET      | /user | Get current user | | ✅ |
 | POST      | /user/login      |   Logins in user | username*, email*, password* |
 | POST | /user/signup      |    Sign up user | username*, password* |
