@@ -52,8 +52,6 @@ App currently shows a clothing store, but the framework could be used for any ty
 #### Admin can upload new products to be sold: #### 
 ![Image of App6](./images/Readme6.png)
 #### Page for user specific purchase history: #### 
-![Image of App5](./ReadMe-Images/ReadMe5.png)
-#### Ensure a secure checkout with PayPal Checkout: #### 
-![Image of App8](./ReadMe-Images/ReadMe8.png)
+![Image of App7](./images/Readme7.png)
 #### User Authentication: #### 
-![Image of App9](./ReadMe-Images/ReadMe9.png)
+![Image of App8](./images/Readme8.png)
