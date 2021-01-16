@@ -1,15 +1,21 @@
-## Online Shop App
-Online Store App with product search, product filtering, user authentication, PayPal Checkout, and more. 
-<br/> Allows Admin to upload items, and for shoppers to easy search items and securely purchase items in their cart.
+## Justin's Forum App
+Online Forum where users can post articles and pictures. 
+Users can comment on other's posts, and edit or delete thir own posts.
 
 MERN Stack, deployed on Heroku
 
 🔗 **Live preview** of the app is [here](https://justins-forum.herokuapp.com/).
 
 ### Purpose: ###
-Showcase my ability to create a full stack application. The app utilizes a MERN stack.
+Showcase my ability to create a full stack application. The app utilizes a MERN stack and a RESTful api.
 
-App currently shows a clothing store, but the framework could be used for any type of store.
+API can be accessed [here](https://justins-forum-api.herokuapp.com/).
+
+Table:
+<Table>
+
+
+
 
 ### Features: ###
 
@@ -32,9 +38,7 @@ App currently shows a clothing store, but the framework could be used for any ty
 * NodeJS
 * ExpressJS
 * MongoDB
-* Redux
 * HTML/CSS
-* Paypal Checkout
 * Heroku Hosting
 
 ### Pictures: ###
