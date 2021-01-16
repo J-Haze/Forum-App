@@ -35,7 +35,10 @@ Full stack MERN Application, deployed on Heroku.
 ## Features: ##
 
 * RESTful API is versatile and accessible by any frontend.
-* CRUD Operations: Posts and Comments
+* CRUD Operations: 
+   * Create, read, edit, and delete posts
+   * Create, read, and delete comments
+   * Create, read, and edit your user profile
 * TinyMCE Rich Text Editor 
   * Users can create posts with a variety of formatting 
   * Posts can contain pictures, and gifs
