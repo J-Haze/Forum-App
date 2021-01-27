@@ -1,6 +1,6 @@
 const passport = require("passport");
 const passportJWT = require("passport-jwt");
-require("dotenv").config();
+require('dotenv').config();
 
 const ExtractJWT = passportJWT.ExtractJwt;
 
@@ -38,6 +38,8 @@ passport.use(
   new JWTStrategy(
     {
       jwtFromRequest: extractJWT.fromAuthHeaderAsBearerToken(),
+      // secretOrKey: keys.secretOrKey,
+      // //Production:
       secretOrKey: process.env.JWT_SECRET,
     },
     (jwtPayload, cb) => {
