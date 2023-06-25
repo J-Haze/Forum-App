@@ -23,7 +23,7 @@ function HomePage(props) {
     <>
       <div id="home">
         {props.loading ? (
-          <div>Loading... </div>
+          <div>Loading... I am not paying for Heroku premium so this will take 15 seconds to wake up when you first open</div>
         ) : blogCount === 0 ? (
           <div className="black-text no-blogs">No blogs have been posted yet.</div>
         ) : (
